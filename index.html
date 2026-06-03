@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Club Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="user">👤 Member_999</div>
+            <div class="balance">Wallet: <span id="wallet-bal">₹1000.00</span></div>
+        </div>
+        <div class="timer-box">
+            <div><p>Period</p><h3 id="period-id">2026060301</h3></div>
+            <div><p>Count Down</p><h2 id="timer">01:30</h2></div>
+        </div>
+        <div class="color-buttons">
+            <button class="btn btn-green" onclick="bet('Green')">Join Green</button>
+            <button class="btn btn-violet" onclick="bet('Violet')">Join Violet</button>
+            <button class="btn btn-red" onclick="bet('Red')">Join Red</button>
+        </div>
+        <div class="number-grid">
+            <!-- 0 se 9 tak buttons -->
+            <button class="num-btn btn-violet" onclick="bet('0')">0</button>
+            <button class="num-btn btn-green" onclick="bet('1')">1</button>
+            <button class="num-btn btn-red" onclick="bet('2')">2</button>
+            <button class="num-btn btn-green" onclick="bet('3')">3</button>
+            <button class="num-btn btn-red" onclick="bet('4')">4</button>
+            <button class="num-btn btn-violet" onclick="bet('5')">5</button>
+            <button class="num-btn btn-red" onclick="bet('6')">6</button>
+            <button class="num-btn btn-green" onclick="bet('7')">7</button>
+            <button class="num-btn btn-red" onclick="bet('8')">8</button>
+            <button class="num-btn btn-green" onclick="bet('9')">9</button>
+        </div>
+        <div class="history-section">
+            <h4>Recent Records</h4>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
